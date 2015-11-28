@@ -1,0 +1,60 @@
+
+<header>
+      <section class="small-4 medium-4 large-4" id="logo">
+            <%= link_to image_tag('jac_logo.jpg'), root_path %>
+      </section>
+      <section class="small-6 medium-6 large-6" id="nav_right">
+          <ul id="nav">
+                <li><%= link_to "HOME", root_path %></li>
+                <% if current_user %>
+                <li><a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">ME</a></li>
+                    <ul id="hover1" class="f-dropdown" data-dropdown-content>
+                        <li><%= link_to "PROFILE", profile_path %></li>
+                        <li><%= link_to "PLAYLISTS", playlists_path %></li>
+                        <li><%= link_to "FAVORITES", likes_path %></li>
+                    </ul>
+                <li><%= link_to "LOG OUT", logout_path %></li>
+                <% else %>
+                <%= link_to "LOG IN", soundcloud_connect_path %>
+                <% end %>
+          </ul>
+      </section>
+      <div id="row small-12 medium-12 large-12 columns">
+            <section class="small-12 medium-12 large-12 columns" id="search">
+                  <h2 id="top">Always entertaining. Never disappointing.</h2>
+                  <h2 id="bottom">Search for your favorite song or artist.</h2>
+                  <form method="get" id="search" accept-charset="utf-8">
+                        <input id="field" type="search" name="search" placeholder="Pretty Lights..." />
+                        <button id="submit" type="submit" name="submit">SUBMIT</button>
+                  </form>
+            </section>
+      </div>
+</header>
+<div id="row">
+<section class="small-12 medium-12 large-12 columns" id="search_list">
+    <div id="list"></div>
+</section>
+</div>
+<section class="small-12 medium-12 large-12 columns" id="trending">
+      <h2 id="left"> Trending </h2>
+      <section class="small-12 medium-12 large-12 columns" id="trending">
+            <div id="trending">
+                <% @tracks.each do |track| %>
+                    <iframe class="iframe" id="trending" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=<%= track.permalink_url %>&amp;auto_play=false&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=true&amp;show_playcount=true&amp;show_user=true&amp;hide_related=false&amp;visual=true&amp;start_track=0&amp;callback=true">
+                    </iframe>
+                <% end %>
+            </div>
+      </section>
+</section>
+<section class="small-6 medium-6 large-6 columns" id="mobile2">
+      <h3> Our mobile app is</h3>
+      <h2> COMING </h2>
+      <h2> SOON </h2>
+</section>
+<section class="small-6 medium-6 large-6 columns" id="mobile">
+</section>
+<footer>
+      <section class="small-12 medium-12 large-12 columns" id="footer">
+            <p> Copyright &copy; 2015 by JAC Music - All Rights Reserved </p>
+      </section>
+</footer>

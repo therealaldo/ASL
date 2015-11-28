@@ -1,0 +1,417 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+ body{
+     max-width: 100%;
+     margin: 0 auto;
+}
+div, iframe{
+    width: 40%;
+    margin-top: 40px;
+    max-height: 246px;
+    display: inline;
+    margin: 0 auto;
+}
+header{
+      background-color: #60646D;
+      height: 60px;
+}
+iframe{
+    padding: .5rem 0;
+    margin-left: 6%;
+}
+section#search{
+      padding: 0;
+      background: url('/assets/cta.jpg') center center;
+      background-size: cover;
+      min-height: 450px;
+}
+section#profile{
+      min-height: 600px;
+}
+section#pro_playlist, section#pro_fav, section#pro_edit{
+      min-height: 600px;
+}
+section#mobile{
+      margin-top: 1rem;
+      color: #FFFFF7;
+      padding-top: 1.25rem;
+      min-height: 431px;
+      background: url('/assets/phones.png') bottom center;
+      background-repeat: no-repeat;
+      background-color: #74787F;
+}
+h2#y_play, h2#y_likes{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 1.625em;
+}
+section#mobile img{
+      padding-top: 1rem;
+}
+section#mobile2{
+      background-color: #74787F;
+      color: #FFFFF7;
+      min-height: 415px;
+      margin-top: 1rem;
+}
+section#mobile2 h3{
+      margin-bottom: 1rem;
+      font-size: 4rem;
+      color: #97CE68;
+}
+section#mobile2 h2{
+      font-weight: 700;
+      font-size: 5rem;
+      margin: 0;
+      padding-bottom: .6rem;
+      color: #97CE68;
+}
+section#mobile2 h3{
+      color: #83D6DE;
+      padding-top: 5rem;
+}
+section#footer{
+      max-width: 100%;
+      padding: 0;
+}
+section#nav_right{
+      float: right;
+}
+footer p{
+      text-align: center;
+      background-color: #60646D;
+      color: #FFFFF7;
+      min-height: 75px;
+      padding-top: 35px;
+      width: 100%;
+      margin: 0;
+}
+h2,h3{
+      text-align: center;
+      color: #222222;
+}
+h2#top{
+      color: #FFFFF7;
+      width: 55%;
+      margin: 14rem auto 0;
+      background-color: #000;
+      opacity: .6;
+      padding-top: 1.25rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+}
+h2#bottom{
+      color: #FFFFF7;
+      width: 55%;
+      margin: 0 auto 2rem;
+      background-color: #000;
+      opacity: .6;
+      padding-bottom: 1.25rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+}
+h2#left{
+      text-align: left;
+      margin-top: 2rem;
+      margin-left: 6rem;
+      font-size: 1.625em;
+}
+button#update{
+      background-color: #60646D;
+      font-weight: bold;
+      height: 37px;
+      line-height: 0px;
+}
+button#update:hover{
+      background-color: transparent;
+      color: #60646D;
+      border: 2px solid #60646D;
+}
+button#submit{
+      position: relative;
+      bottom: 37px;
+      left: 861px;
+      height: 37px;
+      line-height: 0px;
+      background-color: #97CE68;
+      font-weight: bold;
+}
+button#submit:hover{
+      background-color: transparent;
+      position: relative;
+      left: 861px;
+      border: 2px solid #97CE68;
+      color: #97CE68;
+}
+input#field{
+      border: none;
+      width: 37%;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+}
+ul#nav{
+      list-style: none;
+      width: 35%;
+      text-align: right;
+      margin: 1rem 1.5rem 0 0;
+      float: right;
+}
+ul#nav li{
+      display: inline;
+      padding: 0 .25rem 0 .25rem;
+}
+iframe.iframe{
+      width: 50%;
+      max-height: 1000px;
+}
+iframe#trending{
+      width: 40%;
+      margin-left: 6%;
+}
+iframe#playlist{
+      width: 90%;
+      min-height: 400px;
+      margin-left: 5%;
+}
+p#edit{
+      width: 15%;
+      padding: .25rem;
+      text-align: center;
+      border: 2px solid #60646D;
+      background-color: #60646D;
+}
+p#edit a{
+      color: #FFFFF7;
+      width: 100%;
+      font-weight: bold;
+      display: block;
+}
+p#edit a:hover{
+      color: #60646D;
+      width: 100%;
+      font-weight: bold;
+      display: block;
+}
+p#edit:hover{
+      width: 15%;
+      padding: .25rem;
+      text-align: center;
+      border: 2px solid #60646D;
+      background-color: transparent;
+      color: #60646D;
+}
+a:link {
+      color: #FFFFF7;
+}
+a:visited {
+      color: #FFFFF7;
+}
+
+a:hover {
+      color: #FF6766;
+}
+
+a:active {
+      color: #83D6DE;
+}
+#logo{
+      height: auto;
+      width: 175px;
+      float: left;
+}
+
+/*Meidia Queries*/
+@media only screen and (min-width: 1252px) and (max-width: 1355px){
+
+      section#search{
+            position: relative;
+      }
+      input#field{
+            border: none;
+            box-sizing: border-box;
+            width: 40%;
+            margin-bottom: 1rem;
+      }
+      button#submit{
+            position: relative;
+            bottom: 53px;
+            height: 37px;
+            left: 820px;
+      }
+      button#submit:hover{
+            position: absolute;
+            bottom: 53px;
+            height: 37px;
+            left: 820px;
+      }
+      h2#top{
+            margin-top: 9rem;
+            width: 60%;
+      }
+      h2#bottom{
+            width: 60%;
+      }
+}
+@media only screen and (max-width: 1252px) {
+      ul#nav{
+            width: 100%;
+      }
+      section#search{
+            position: relative;
+      }
+      input#field{
+            border: none;
+            box-sizing: border-box;
+            width: 40%;
+            margin-bottom: 1rem;
+      }
+      button#submit{
+            position: absolute;
+            bottom: -4px;
+            left: 905px;
+      }
+      button#submit:hover{
+            position: absolute;
+            bottom: -4px;
+            left: 905px;
+      }
+}
+/* max-width 640px, mobile-only styles */
+
+@media only screen and (max-width: 1075px) {
+      #mobile{
+            background-size: 100%;
+            width: 100%;
+            background-position: bottom;
+            margin-top: 0;
+      }
+      section#mobile{
+            margin-top: 0;
+      }
+      #mobile2{
+            width: 100%;
+            margin-top: 0 !important;
+      }
+      button#submit{
+            position: absolute;
+            bottom: -4px;
+            left: 675px;
+      }
+      button#submit:hover{
+            position: absolute;
+            bottom: -4px;
+            left: 675px;
+      }
+}
+@media only screen and (max-width: 890px) {
+       button#submit{
+            position: absolute;
+            bottom: -4px;
+            left: 443px;
+      }
+      button#submit:hover{
+            position: absolute;
+            bottom: -4px;
+            left: 443px;
+      }
+}
+
+@media only screen and (max-width: 640px) {
+      #mobile2{
+            width: 100%;
+            margin-top: 0;
+      }
+      #mobile{
+            background-size: auto;
+            width: 100%;
+            background-position: bottom;
+      }
+      section#search{
+            position: relative;
+      }
+      input#field{
+            border: none;
+            box-sizing: border-box;
+            width: 85%;
+      }
+      button#submit{
+            position: absolute;
+            bottom: -4px;
+            left: 243px;
+      }
+      button#submit:hover{
+            position: absolute;
+            bottom: -4px;
+            left: 243px;
+      }
+}
+@media only screen and (max-width: 527px) {
+      #mobile{
+            background-size: 50%;
+            background-position: bottom;
+      }
+}
+
+@media only screen and (max-width: 448px) {
+      #mobile2{
+            width: 100%;
+            margin-top: 0 !important;
+      }
+      section#mobile2 h3{
+            padding-top: 1.5rem;
+      }
+      #mobile{
+            width: 100%;
+            min-height: 0px;
+      }
+      ul#nav{
+            padding: 0;
+      }
+      ul#nav li{
+            padding: 0 .1rem 0 .1rem;
+      }
+      section#search{
+            position: relative;
+      }
+      input#field{
+            border: none;
+            box-sizing: border-box;
+            width: 85%;
+      }
+      button#submit{
+            position: absolute;
+            bottom: 29px;
+            left: 243px;
+      }
+      button#submit:hover{
+            position: absolute;
+            bottom: 29px;
+            left: 243px;
+      }
+      h2#top{
+            margin-top: 9rem;
+            width: 85%;
+      }
+      h2#bottom{
+            width: 85%;
+      }
+      h2#left{
+            margin-left: 2.25rem;
+      }
+}
