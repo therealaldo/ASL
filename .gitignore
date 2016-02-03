@@ -34,3 +34,17 @@ Project1/lib/bundler/man/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+
+Project2/app/bootstrap.php.cache
+Project2/app/cache/*
+!app/cache/.gitkeep
+Project2/app/config/parameters.yml
+Project2/app/logs/*
+!app/logs/.gitkeep
+Project2/app/phpunit.xml
+Project2/bin/
+Project2/composer.phar
+Project2/vendor/
+Project2/web/bundles/
+Project2src/AppBundle/configuration.php
