@@ -1,14 +1,14 @@
 *.gem
 *.rbc
-/.config
-/coverage/
-/InstalledFiles
-/pkg/
-/spec/reports/
-/spec/examples.txt
-/test/tmp/
-/test/version_tmp/
-/tmp/
+Project1/.config
+Project1/coverage/
+Project1/InstalledFiles
+Project1/pkg/
+Project1/spec/reports/
+Project1/spec/examples.txt
+Project1/test/tmp/
+Project1/test/version_tmp/
+Project1/tmp/
 
 ## Specific to RubyMotion:
 .dat*
@@ -16,15 +16,15 @@
 build/
 
 ## Documentation cache and generated files:
-/.yardoc/
-/_yardoc/
-/doc/
-/rdoc/
+Project1/.yardoc/
+Project1/_yardoc/
+Project1/doc/
+Project1/rdoc/
 
 ## Environment normalization:
-/.bundle/
-/vendor/bundle
-/lib/bundler/man/
+Project1/.bundle/
+Project1/vendor/bundle
+Project1/lib/bundler/man/
 
 # for a library or gem, you might want to ignore these files since the code is
 # intended to run in multiple environments; otherwise, check them in:
