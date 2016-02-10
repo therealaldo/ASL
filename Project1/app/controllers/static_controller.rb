@@ -1,7 +1,9 @@
 class StaticController < ApplicationController
   def home
       client = Soundcloud.new(:client_id => ENV["SOUNDCLOUD_CLIENT_ID"])
-      @tracks = client.get("/tracks", :limit => 10, :order => "hotness")
+      @tracks = client.get("/tracks",
+                            :limit => 10,
+                            :order => "hotness")
   end
 
   def profile
@@ -21,7 +23,8 @@ class StaticController < ApplicationController
       client = Soundcloud.new(:access_token => token)
 
       current_user = client.get("/me")
-      @favorites = client.get("/users/#{current_user.id}/favorites/", :limit => 21)
+      @favorites = client.get("/users/#{current_user.id}/favorites/",
+                               :limit => 21)
   end
 
   def playlists
@@ -47,11 +50,12 @@ class StaticController < ApplicationController
       user = User.find(session[:user_id])
       token = user.soundcloud_access_token
       client = Soundcloud.new(:access_token => token)
-      client.put("/me", :user => {
-          :full_name => params["fullname"],
-          :city => params["city"],
-          :description => params["description"]
-          })
+      client.put("/me",
+                  :user => {
+                    :full_name => params["fullname"],
+                    :city => params["city"],
+                    :description => params["description"]
+                  })
 
       redirect_to profile_path
   end
