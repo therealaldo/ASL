@@ -25,6 +25,9 @@ build/
 /Project1/.bundle/
 /Project1/vendor/bundle
 /Project1/lib/bundler/man/
+/Project1/config/env.yml
+/Project1/config/secrets.yml
+/Project1/config/database.yml
 
 # for a library or gem, you might want to ignore these files since the code is
 # intended to run in multiple environments; otherwise, check them in:
@@ -37,10 +40,10 @@ build/
 
 
 /Project2/app/bootstrap.php.cache
-/Project2/app/cache/*
+/Project2/app/cache/
 !app/cache/.gitkeep
 /Project2/app/config/parameters.yml
-/Project2/app/logs/*
+/Project2/app/logs/
 !app/logs/.gitkeep
 /Project2/app/phpunit.xml
 /Project2/bin/
